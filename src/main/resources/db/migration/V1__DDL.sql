@@ -12,7 +12,8 @@ CREATE TABLE `image_statistics`
 (
     `style_id`         int       NOT NULL,
     `num_of_submitted` int       NOT NULL DEFAULT 0,
-    `max_upload_date`  timestamp NULL     DEFAULT NULL
+    `max_upload_date`  timestamp NULL     DEFAULT NULL,
+    UNIQUE (`style_id`)
 );
 
 CREATE PROCEDURE update_image_statistics_by_style_id(IN style_id_param int)
