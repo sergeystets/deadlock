@@ -77,3 +77,12 @@ Use your IDE to run the app, or if you wish to run the app from the console, use
 ```
 
 The app should be accessible by the following link: http://localhost:8084
+
+## Git Branches
+
+The project contains two branches:
+
+- `main` branch with the code having the issue
+- `deadlock_retry` branch with the actual fix
+
+Use `git checkout deadlock_retry` to switch to another branch to see how the deadlock was handled.
